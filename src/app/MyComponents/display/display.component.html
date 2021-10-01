@@ -1,0 +1,14 @@
+<div class="container" >
+<ng-container *ngFor="let movie of share.mList">
+    <div class="row" >
+        <div class="card" style="width: 100%;">
+            <img src="{{movie.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{movie.title}}</h5>
+                <p class="card-text">{{movie.description}}</p>
+            </div>
+        </div>
+    </div>
+</ng-container>
+</div>
+
