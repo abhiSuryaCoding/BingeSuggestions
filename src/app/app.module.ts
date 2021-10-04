@@ -34,7 +34,7 @@ const config={
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(config),
     AngularFireDatabaseModule
 
  
