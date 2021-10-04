@@ -22,9 +22,10 @@
         
         <div class="form-group">
           
-          <input #name list="movieList" type="text" class="form-control"  id="inputName" aria-describedby="emailHelp" placeholder="Enter Movie/Series name" (input)="api.getList(name.value)">
+          <input #name list="movieList" type="text" class="form-control"  id="inputName" aria-describedby="emailHelp" placeholder="Enter Movie/Series name" >
         </div>
-        <button type="button" class="btn btn-primary mb-2" disabled>Add!</button>
+        <button type="button" class="btn btn-primary mb-2"  (click)="api.getList(name.value)">Search</button>
+        <button type="button" class="btn btn-primary mb-2" (click)="api.addDocument(name.value)">Add!</button>
       </form>
          
         <ng-template [ngIf]="this.api.isSet">
