@@ -2,7 +2,12 @@
 <ng-container *ngFor="let movie of share.mList">
     <div class="row" >
         <div class="card" style="width: 100%;">
+            <a href="https://www.geeksforgeeks.org/html-tutorials/" target="_blank">
             <img src="{{movie.image}}" class="card-img-top" alt="...">
+            <div class="overlay">
+                <div class="text">{{movie.title}}: Click to Download</div>
+              </div>    
+            </a>
             <div class="card-body">
                 <h5 class="card-title">{{movie.title}}</h5>
                 <p class="card-text">{{movie.description}}</p>
